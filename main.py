@@ -8,6 +8,7 @@ from handlers.picture import picture_router
 from handlers.echo import echo_router
 from handlers.our_menu import menu_router
 from handlers.survey import survey_router
+from handlers.mashina_parser import mashina_router
 
 
 async def on_startup(bot: Bot):
@@ -22,6 +23,7 @@ async def main():
     dp.include_router(picture_router)
     dp.include_router(menu_router)
     dp.include_router(survey_router)
+    dp.include_router(mashina_router)
 
     # в самом конце
     dp.include_router(echo_router)

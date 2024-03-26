@@ -16,6 +16,9 @@ def start_kb():
             ],
             [
                 InlineKeyboardButton(text="Наше меню", callback_data="our_menu")
+            ],
+            [
+                InlineKeyboardButton(text="Показать объявления", callback_data="parse_cars")
             ]
         ]
     )
